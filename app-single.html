@@ -31,7 +31,7 @@
                 </div>
                 <div class="clearfix"></div>
             </header>
-            
+
             <div class="content clearfix">
                 <div class="head-menu clearfix">
                     <div class="button-link register">
@@ -74,7 +74,7 @@
                                             </SELECT>
                                             <SELECT class="day" name="day">
                                                 <option value="">--</option>
-                                            </select>
+                                                </select>
                                         </form>
                                         <p>〜</p>
                                         <form name="end" method="post" action="#">
@@ -104,7 +104,7 @@
                                         </ul>
                                         <div class="tab-pane fade in active" id="ostab1">
                                             <table class="report">
-                                                
+
                                                 <tr class="title">
                                                     <td rowspan="2">日付</td>
                                                     <td rowspan="2">順位</td>
@@ -187,7 +187,95 @@
                                     </div><!-- /#myOsTabContent -->
                                 </div><!-- /#subtab1 -->
                                 <div class="tab-pane fade" id="subtab2">
-                                    <p>コンテンツ2</p>
+                                    <table class="report news-table">
+
+                                        <tr class="title">
+                                            <td>公開日</td>
+                                            <td>OS</td>
+                                            <td>記事タイトル</td>
+                                            <td>IMP</td>
+                                            <td>記事ビュー数</td>
+                                            <td>ステータス</td>
+                                        </tr>
+                                        <tr class="value">
+                                            <td>2015/08/01</td>
+                                            <td>iOS<br>android</td>
+                                            <td>バナーを更新したぞ。仲間たちのイラスト・・・</td>
+                                            <td>2.253.1567</td>
+                                            <td>65,850</td>
+                                            <td class="right-value">
+                                                <div class="news-status news-public clearfix">
+                                                    <span>公開中</span>
+                                                    <div class="pub-color"></div>
+                                                </div>
+                                                <a href="./">編集</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="value">
+                                            <td>2015/08/02</td>
+                                            <td>android</td>
+                                            <td>バナーを更新したぞ。仲間たちのイラスト・・・</td>
+                                            <td>2.253.1567</td>
+                                            <td>65,850</td>
+                                            <td class="right-value">
+                                                <div class="news-status news-public clearfix">
+                                                    <span>公開中</span>
+                                                    <div class="pub-color"></div>
+                                                </div>
+                                                <a href="./">編集</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="value">
+                                            <td>2015/08/03</td>
+                                            <td>iOS</td>
+                                            <td>バナーを更新したぞ。仲間たちのイラスト・・・</td>
+                                            <td>2.253.1567</td>
+                                            <td>65,850</td>
+                                            <td class="right-value">
+                                                <div class="news-status news-private clearfix">
+                                                    <span>非公開</span>
+                                                    <div class="pri-color"></div>
+                                                </div>
+                                                <a href="./">編集</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="value">
+                                            <td>2015/08/04</td>
+                                            <td>iOS</td>
+                                            <td>バナーを更新したぞ。仲間たちのイラスト・・・</td>
+                                            <td>2.253.1567</td>
+                                            <td>65,850</td>
+                                            <td class="right-value">
+                                                <div class="news-status news-private clearfix">
+                                                    <span>非公開</span>
+                                                    <div class="pri-color"></div>
+                                                </div>
+                                                <a href="./">編集</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="value">
+                                            <td>2015/08/05</td>
+                                            <td>iOS</td>
+                                            <td>バナーを更新したぞ。仲間たちのイラスト・・・</td>
+                                            <td>2.253.1567</td>
+                                            <td>65,850</td>
+                                            <td class="right-value">
+                                                <div class="news-status news-private clearfix">
+                                                    <span>非公開</span>
+                                                    <div class="pri-color"></div>
+                                                </div>
+                                                <a href="./">編集</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="sum value">
+                                            <td>合計</td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>112,657,835</td>
+                                            <td>329,250</td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
                                 </div><!-- /#subtab2 -->
                                 <div class="tab-pane fade" id="subtab3">
                                     <p>コンテンツ3</p>
@@ -212,28 +300,28 @@
             </footer>
         </div><!-- /.container -->
         <script>
-        $(".move-top").click(
-            function(){
-                $("html,body").animate({scrollTop:0},"fast");
-            }
+$(".move-top").click(
+        function(){
+            $("html,body").animate({scrollTop:0},"fast");
+        }
         );
-        for(var i=0; i<11; i++){
-            $(".year").append($("<option>").val(i+2015).text(i+2015+"年"));
-        }
-        for(var j=1; j<13; j++){
-            $(".month").append($("<option>").val(j).text(j+"月"));
-        }
-        for(var k=1; k<32; k++){
-            $(".day").append($("<option>").val(k).text(k+"日"));
-        }
-        $("a.setday").click( function(){
-            $(".year").val("2015");
-            $(".month").val("8");
-            $(".day").val("20");
-            $(".endyear").val("2015");
-            $(".endmonth").val("9");
-            $(".endday").val("10");
-        });
+for(var i=0; i<11; i++){
+    $(".year").append($("<option>").val(i+2015).text(i+2015+"年"));
+}
+for(var j=1; j<13; j++){
+    $(".month").append($("<option>").val(j).text(j+"月"));
+}
+for(var k=1; k<32; k++){
+    $(".day").append($("<option>").val(k).text(k+"日"));
+}
+$("a.setday").click( function(){
+    $(".year").val("2015");
+    $(".month").val("8");
+    $(".day").val("20");
+    $(".endyear").val("2015");
+    $(".endmonth").val("9");
+    $(".endday").val("10");
+});
         </script>
     </body>
 </html>

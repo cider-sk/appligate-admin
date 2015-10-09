@@ -8,13 +8,7 @@ body {
     margin:0;
     font-family:Hiragino Kaku Gothic Pro;
 }
-.clearfix:after {  
-  content: ".";   
-  display: block;   
-  height: 0;   
-  clear: both;   
-  visibility: hidden;  
-}   
+   
 .container{
     width:980px;
     margin:auto;
@@ -648,6 +642,48 @@ table.bottom th{
     margin: 12px auto 8px;
     box-shadow: 0 1px 0 #7b0000;
 }
+table.news-table{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+table.news-table td{
+    padding:5px 0px 5px 10px;
+}
+table.news-table td.right-value{
+    width:200px;
+}
+.news-status{
+    padding:3px;
+    float:left;
+    border:1px solid;
+}
+.news-status+a{
+    float:right;
+    margin-top:4px;
+    margin-right:20px;
+}
+.news-public span{
+    color:#aa0000;
+}
+.news-private span{
+    color:#4d4d4d;
+}
+.pub-color{
+    background-color:#aa0000;
+    float:right;
+    height: 15px;
+    width: 35px;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+.pri-color{
+    background-color:#4d4d4d;
+    float:left;
+    height: 15px;
+    width: 35px;
+    margin-top: 2px;
+    margin-right: 5px;
+}
 /*フッター*/
 footer{
     background-color:#4d4d4d;
@@ -660,3 +696,4 @@ footer p{
     color:#fff;
     margin:0;
 }
+
