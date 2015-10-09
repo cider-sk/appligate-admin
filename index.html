@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>管理画面 | appligate</title>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="js/jquery-2.1.4.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <a href="/appligate-admin"><img class="head-logo" src="img/header_logo.png" alt="ヘッダーロゴ"></a>
+                <div class="head-middle">
+                    <p>iOS開発者名：株式会社さてここでモンダイです</p>
+                    <p>Android開発者名：株式会社さてここでモンダイです</p>
+                </div>
+                <div class="head-right">
+                    <a href="#">お問合せ</a><span>|</span>
+                    <a href="#">ヘルプ</a><span>|</span>
+                    <a href="#">ロゴ・資料のダウンロード</a>
+                    <a class="logout"href="#">ログアウト</a>
+                    <p>登録開発者名：株式会社さてここでモンダイです</p>
+                </div>
+                <div class="clearfix"></div>
+            </header>
+            <div class="content clearfix">
+                <div class="head-menu clearfix">
+                    <div class="button-link register">
+                        <a href="#">アプリ新規登録</a>
+                    </div>
+                    <div class="adsence">
+                        <img src="img/adsence.png" alt="#">
+                    </div>
+                </div>
+                
+                <div class="favorite-num">
+                    <table class="favorite">
+                        <col class="left">
+                        <col class="right">
+                        <tr class="title">
+                            <td class="t-left">OS</td>
+                            <td class="t-right">会社のお気に入り数</td>
+                        </tr>
+                        <tr>
+                            <td>iOS</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>android</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+                </div><!-- /.favorite-num -->
+                <div class="clearfix"></div>
+                <div class="all-app clearfix">
+                    <h4>登録アプリ一覧</h4>
+                    <table class="apps">
+                    <col class="left1">
+                    <col class="left2">
+                    <col class="left2">
+                    <col class="left2">
+                    <col class="left3">
+                    <tr class="title">
+                        <td class="t-left">アプリ</td>
+                        <td class="t-left">デバイス</td>
+                        <td class="t-left">属性</td>
+                        <td class="t-left">ステータス</td>
+                        <td>予約・特典IDページビュー数</td>
+                    </tr>
+                    <tr>
+                        <td class="app-left"><p><img src="img/app1.png" alt="appicon"></p><p>さてここでモンダイです</p></td>
+                        <td><p>iOS</p><p>android</p></td>
+                        <td><p>事前予約</p></td>
+                        <td><span>未リリース</span></td>
+                        <td class="app-right">
+                            <div class="txt"><p>000.000.000.000.000</p></div>
+                            <div class="next-link"><a href="./app-single.html"><img class="next" src="img/next.png" alt=""></a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="app-left"><p><img src="img/icon.jpg" alt="appicon"></p><p>ねむりの木に住むウィックルー睡眠導入サポートー</p></td>
+                        <td><p>andriod</p></td>
+                        <td><p>事前予約</p></td>
+                        <td><span>未リリース</span></td>
+                        <td class="app-right">
+                            <div class="txt"><p>000.000.000.000.000</p></div>
+                            <div class="next-link"><a href="./app-single.html"><img class="next" src="img/next.png" alt=""></a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="app-left"><p><img src="img/app3.png" alt="appicon"></p><p>ウパルランド</td>
+                        <td><p>andriod</p></td>
+                        <td><p>特典配布</p></td>
+                        <td><span>配布中</span></td>
+                        <td class="app-right">
+                            <div class="txt"><p>000.000.000.000.000</p></div>
+                            <div class="next-link"><a href="./app-single.html"><img class="next" src="img/next.png" alt=""></a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="app-left"><p><img src="img/icon.jpg" alt="appicon"></p><p>ねむりの木に住むウィックルー睡眠導入サポートー</td>
+                        <td><p>iOS</p></td>
+                        <td><p>特典配布</p></td>
+                        <td><p>配布済み</p></td>
+                        <td class="app-right">
+                            <div class="txt"><p>000.000.000.000.000</p></div>
+                            <div class="next-link"><a href="./app-single.html"><img class="next" src="img/next.png" alt=""></a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="app-left"><p><img src="img/icon.jpg" alt="appicon"></p><p>ねむりの木に住むウィックルー睡眠導入サポートー</td>
+                        <td><p>iOS</p></td>
+                        <td><p>事前予約</p></td>
+                        <td><p>リリース済</p></td>
+                        <td class="app-right">
+                            <div class="txt"><p>000.000.000.000.000</p></div>
+                            <div class="next-link"><a href="./app-single.html"><img class="next" src="img/next.png" alt=""></a></div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="app-left"><p><img src="img/app3.png" alt="appicon"></p><p>ウパルランド</p></td>
+                        <td><p>andriod</p></td>
+                        <td><p>事前予約</p></td>
+                        <td><p>リリース済</p></td>
+                        <td class="app-right">
+                            <div class="txt"><p>000.000.000.000.000</p></div>
+                            <div class="next-link"><a href="./app-single.html"><img class="next" src="img/next.png" alt=""></a></div>
+                        </td>
+                    </tr>
+                    </table>
+                    <div class="clearfix"></div>
+                </div><!-- /.all-app -->
+                
+                <div class="move-top">
+                    <div class="glyphicon glyphicon-chevron-up"></div>TOP
+                </div>
+            </div><!-- /.content -->
+            <footer>
+                <p>&copy;CopyRight - AltavistaRise. All Right Reserved.</p>
+            </footer>
+        </div><!-- /.container -->
+        <script>
+        $(".move-top").click(
+    function(){
+        $("html,body").animate({scrollTop:0},"fast");
+    }
+);
+        </script>
+    </body>
+</html>
